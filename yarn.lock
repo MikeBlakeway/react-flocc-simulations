@@ -4443,6 +4443,16 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
+flocc-ui@^0.0.9:
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/flocc-ui/-/flocc-ui-0.0.9.tgz#902ef71f8056675df9bf29141da03e335a933621"
+  integrity sha512-mqVRK0kaZvTMLBkZ+mo1Ztx/YSJAP+Yp9tBZUkjA3PMstE/DXja0uhll+LQWoG3n9prjbsyORO0rIUORfB8GLA==
+
+flocc@^0.5.21:
+  version "0.5.21"
+  resolved "https://registry.yarnpkg.com/flocc/-/flocc-0.5.21.tgz#89bc523ebf68b2ce9cef7c364a8bcbdf11394e03"
+  integrity sha512-JblricZsbDGn6OxVG/EN+2CiwiFM8gEpPr4H6uAAB2huRsPk3iFPH5p2V0t8zGf3Kw8WiXBXcMfq7/zPbaKX7A==
+
 follow-redirects@^1.0.0:
   version "1.15.2"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.2.tgz#b460864144ba63f2681096f274c4e57026da2c13"
