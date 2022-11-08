@@ -1,6 +1,6 @@
 import { Environment } from 'flocc'
-import createChart from './components/createChart'
-import createTable from './components/createTable'
+import createChart from '../views/createChart'
+import createTable from '../views/createTable'
 
 const createEnvironment = (table, graph) => {
     const environment = new Environment()

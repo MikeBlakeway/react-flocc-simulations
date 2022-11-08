@@ -1,5 +1,6 @@
 import { LineChartRenderer } from 'flocc'
-import { COLORS, CHART_OPTIONS, POPULATION } from '../../constants'
+import { POPULATION } from '../../../constants'
+import { COLORS, CHART_OPTIONS } from '../config'
 
 const createChart = (environment) => {
     const chart = new LineChartRenderer(environment, CHART_OPTIONS)

@@ -1,7 +1,8 @@
 import populateAgents from './populateAgents'
-import { COLORS, POPULATION } from '../../constants'
+import { POPULATION } from '../../../constants'
+import { COLORS } from '../config'
 
-const setupSimulation = (environment, tick) => {
+const setupTributesSimulation = (environment, tick) => {
     environment.set('activated', 0)
 
     populateAgents(environment, tick, COLORS, POPULATION)
@@ -20,4 +21,4 @@ const setupSimulation = (environment, tick) => {
     })
 }
 
-export default setupSimulation
+export default setupTributesSimulation

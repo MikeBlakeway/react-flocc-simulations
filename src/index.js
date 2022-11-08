@@ -1,8 +1,16 @@
 import { utils } from 'flocc'
 import { POPULATION, TURNS } from './constants'
-import createEnvironment from './environment/createEnvironment'
-import { costToPay, setCommitment, getCommitment } from './rules/tributes'
-import setupSimulation from './rules/tributes/setupSimulation'
+import {
+    createEnvironment,
+    startSimulation,
+    setupTributesSimulation,
+    runTributesSimulation,
+} from './scenarios/tributes/environment'
+import {
+    costToPay,
+    getCommitment,
+    setCommitment,
+} from './scenarios/tributes/rules'
 
 const table = document.getElementById('root')
 const graph = document.getElementById('graph')
@@ -191,19 +199,6 @@ function tick(agent) {
     }
 }
 
-function run() {
-    // tick once in random order
-    environment.tick({ randomizeOrder: true })
-    // reset the # of agents who have been activated
-    environment.set('activated', 0)
-    // increase everyone's wealth by 20
-    environment.getAgents().forEach((a) => {
-        a.increment('wealth', 20)
-    })
-    // stop after the number of turns
-    if (environment.time >= TURNS) return
-    requestAnimationFrame(run)
-}
+const tributesConfig = { environment, tick, TURNS }
 
-setupSimulation(environment, tick)
-run()
+startSimulation(tributesConfig, setupTributesSimulation, runTributesSimulation)
