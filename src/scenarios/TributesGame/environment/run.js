@@ -1,4 +1,4 @@
-const runTributesSimulation = (environment, turns) => {
+const run = (environment, turns) => {
     // tick once in random order
     environment.tick({ randomizeOrder: true })
     // reset the # of agents who have been activated
@@ -9,7 +9,7 @@ const runTributesSimulation = (environment, turns) => {
     })
     // stop after the number of turns
     if (environment.time >= turns) return
-    requestAnimationFrame(() => runTributesSimulation(environment, turns))
+    requestAnimationFrame(() => run(environment, turns))
 }
 
-export default runTributesSimulation
+export default run
