@@ -1,10 +1,10 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-
-import TributesGame from './scenarios/TributesGame/TributesGame'
+// import PredatorPrey from './scenarios/PredatorPrey/PredatorPrey'
+import SheepVsWolves from './scenarios/SheepVsWolves/SheepVsWolves'
 
 createRoot(document.getElementById('root')).render(
     <StrictMode>
-        <TributesGame />
+        <SheepVsWolves />
     </StrictMode>
 )
